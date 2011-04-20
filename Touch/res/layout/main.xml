@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 	android:id="@+id/LinearLayout01"
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent"
+				android:orientation="vertical"
+				xmlns:android="http://schemas.android.com/apk/res/android">
+									
+	<TableLayout android:id="@+id/TableLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50px" android:layout_gravity="center_horizontal"> 
+			<TextView android:text="Mouse Sensitivity: "
+					  android:id="@+id/TextView03" 
+					  android:layout_width="wrap_content" 
+					  android:layout_height="wrap_content"
+					  android:textStyle="bold"
+					  android:textSize="20px"
+					  android:layout_marginRight="20px">
+			</TextView>
+			<SeekBar android:id="@+id/SeekBar01"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="20px">
+		    </SeekBar>
+	  		
+	  		<TextView android:text="IP Address:" android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:textSize="20px" /> 
+	  		<EditText android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@+id/EditText01" android:id="@+id/EditText01" android:phoneNumber="true" android:maxWidth="230px" android:minWidth="230px" /> 
+		
+	  		<TextView android:text="PORT:" android:id="@+id/TextView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:textSize="20px" /> 
+	  		<EditText android:layout_height="wrap_content" android:text="@+id/EditText02" android:id="@+id/EditText02" android:layout_width="fill_parent" android:phoneNumber="true" android:maxWidth="230px" android:minWidth="230px" android:textStyle="normal" /> 
+	
+	</TableLayout>
+	<Button android:id="@+id/Button01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="@string/buttonHandler" android:text="Connect" android:layout_gravity="center_horizontal" android:textStyle="bold" android:textSize="20px" android:layout_marginTop="15px" /> 
+</LinearLayout>

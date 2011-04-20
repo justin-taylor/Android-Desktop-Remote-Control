@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:id="@+id/TouchPad">
+	
+	<LinearLayout
+      android:orientation="vertical"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent">
+	
+	  	<LinearLayout
+	      android:orientation="vertical"
+	      android:layout_width="fill_parent"
+	      android:layout_height="fill_parent" android:layout_weight="1">
+			
+			<Button android:text="  K  " 
+	  				android:id="@+id/keyboardbutton" 
+	  				android:layout_width="wrap_content" 
+	  				android:layout_height="wrap_content"
+	  				android:onClick="keyClickHandler" android:layout_gravity="right">
+	  		</Button>
+	  		
+	  	</LinearLayout>
+		
+		<LinearLayout
+			android:layout_gravity="bottom"
+			android:id="@+id/ButtonGroup"
+			android:layout_width="fill_parent"
+	  		android:layout_height="wrap_content"
+	  		android:orientation="horizontal">
+	  		
+	  		<Button android:text="L" 
+	  				android:id="@+id/LeftClickButton" 
+	  				android:layout_width="wrap_content" 
+	  				android:layout_height="wrap_content"
+	  				android:onClick="LeftButtonClickHandler">
+	  		</Button>
+	  		
+	  		<Button android:text="R" 
+	  				android:id="@+id/RightClickButton" 
+	  				android:layout_width="wrap_content" 
+	  				android:layout_height="wrap_content"
+	  				android:onClick="RightButtonClickHandler">
+	  		</Button>
+	  		
+		</LinearLayout>
+		
+	</LinearLayout>
+	
+		  	<EditText android:id="@+id/KeyBoard" 
+			  android:layout_width="wrap_content" 
+			  android:layout_height="wrap_content"
+			  android:inputType="textVisiblePassword" android:layout_gravity="right" android:text="  K  " android:focusable="true">
+			</EditText>
+
+</LinearLayout>
